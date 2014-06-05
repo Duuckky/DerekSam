@@ -3,11 +3,8 @@ package me.dereksam.main;
 public class Main {
 	
 	private static String name;
-<<<<<<< HEAD
 	private static int age;
-=======
 	private static String lastName;
->>>>>>> 883126b13a0e17c2ab57e9a1cca1ecd8431e1ea2
 	
 	public static void main(String[] args) {
 		age = 15;
