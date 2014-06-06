@@ -1,0 +1,26 @@
+Race list: 		Classes:
+Elf		Archers
+Dwarf		Thieves
+Goblin		Warriors
+Troll		Battle Mages
+Orc		Priests
+Human
+Gnome
+
+Story: After there origin story is told, the adventurer i greeted by a young boy.
+The boy asks, where did you come from, you proceed to answer (Name of town)
+He thens asks, why are you here, you answer OPTIONS:	Army recruit on patroll
+					Screw off kid
+					Going to see a friend
+					Gathering supplies from a neighboring village
+The child asks, would you like to ask my father for help. answer (yes/no)
+if no child responds ok, the village is that way
+if yes child responds, Ill take you to see my dad
+
+Now in the village a person (either the father or a civilian) tells you where you can get supplies
+While in the supply area you hear a series of load roars.
+you go outside to find that the borders of the town are about to fall to an army of the undead
+before the the wall goes down you hear that your town has already been over run
+(army path) and that your patrol has been overtaken
+(friend path) you decide to go find your friend
+In shock you feel that your only option is to flee
