@@ -5,6 +5,8 @@ import java.util.ArrayList;
 import me.dereksam.API.API;
 import me.dereksam.API.CharacterCreationAPI;
 import me.dereksam.items.Item;
+import me.dereksam.items.ItemWoodenShield;
+import me.dereksam.items.ItemWoodenSword;
 
 public class Main {
 	
@@ -23,9 +25,13 @@ public class Main {
 	public static ArrayList<Item> inventory = new ArrayList<Item>();
 	
 	public static void main(String[] args) {
+		
 		CharacterCreationAPI.characterCreation();
-		API.sendMessage(String.valueOf(inventory.get(0)));
 		// To get input type <variable> = scan.nextLine();
+		API.sendMessage(String.valueOf(ItemWoodenSword.woodenSword.getName()));
+		API.sendMessage(String.valueOf(ItemWoodenSword.woodenSword.getID()));
+		API.sendMessage(String.valueOf(ItemWoodenShield.woodenShield.getName()));
+		API.sendMessage(String.valueOf(ItemWoodenShield.woodenShield.getID()));
 	}
 }
 

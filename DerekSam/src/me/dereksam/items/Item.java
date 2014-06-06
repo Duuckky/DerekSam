@@ -2,27 +2,37 @@ package me.dereksam.items;
 
 public class Item {
 	
-	public Item(String name, int weight, int str, int wis, int vit, int dmg, int def) {
-		
+	public static int id;
+	public static String name;
+	public static int dmg;
+	public static int weight;
+	public static int vit;
+	
+	public Item(String name, int itemID, int dmg, int weight, int vit) {
+		Item.id = itemID;
+		Item.name = name;
+		Item.dmg = dmg;
+		Item.weight = weight;
+		Item.vit = vit;
 	}
 	
-	public static String getName() {
-		return null;
-	} // name
+	public String getName() {
+		return name;
+	}
 	
-	void setWeight(int weight) {
-		
-	} // weight
+	public int getDmg() {
+		return dmg;
+	}
 	
-	void setStats(int str, int wis, int vit) {
-		
-	} // str - strength  | wis - wisdom | vit - vitality
+	public int getWeight() {
+		return weight;
+	}
 	
-	void setDmg(int dmg) {
-		
-	} // dmg - damage
+	public int getVit() {
+		return vit;
+	}
 	
-	void setDef(int def) {
-		
-	} // def - defense
+	public String getID() {
+		return String.valueOf(id);
+	}
 }

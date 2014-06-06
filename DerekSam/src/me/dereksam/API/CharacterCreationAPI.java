@@ -2,7 +2,7 @@ package me.dereksam.API;
 
 import java.util.Scanner;
 
-import me.dereksam.items.ItemShields;
+import me.dereksam.items.ItemWoodenSword;
 import me.dereksam.playerdata.Race;
 import me.dereksam.playerdata.Role;
 
@@ -22,7 +22,7 @@ public class CharacterCreationAPI {
 		while (inCharacterSelection) {
 			API.sendMessage("Please enter you race: ");
 			API.listRaces();
-			InventoryAPI.addItem(ItemShields.steelShield);
+			InventoryAPI.addItem(ItemWoodenSword.woodenSword);
 			raceID = scan.nextInt();
 			Race.setupRace(raceID);
 			API.sendMessage("Please enter your role");
