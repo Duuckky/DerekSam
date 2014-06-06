@@ -7,16 +7,16 @@ public class Role {
 	public static void setupRole(RoleTypes role) {
 		switch (role) {
 		case ARCHER:
-			setRole("elf");
+			setRole("archer");
 			break;
 		case THIEF:
-			setRole("human");
+			setRole("thief");
 			break;
 		case WARRIOR:
-			setRole("goblin");
+			setRole("warrior");
 			break;
 		case MAGE:
-			setRole("orc");
+			setRole("mage");
 			break;
 		default:
 			setRole(null);
