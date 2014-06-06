@@ -27,6 +27,25 @@ public class Role {
 	private static void setRole(String role) {
 		Role.roleName = role;
 	}
+	
+	public static void setupRole(int roleID) {
+		switch (roleID) {
+		case 1:
+			Role.setupRole(RoleTypes.ARCHER);
+			break;
+		case 2:
+			Role.setupRole(RoleTypes.THIEF);
+			break;
+		case 3:
+			Role.setupRole(RoleTypes.WARRIOR);
+			break;
+		case 4:
+			Role.setupRole(RoleTypes.MAGE);
+			break;
+		default:
+			break;
+		}
+	}
 		
-	public static String getRace() { return roleName; }
+	public static String getRole() { return roleName; }
 }

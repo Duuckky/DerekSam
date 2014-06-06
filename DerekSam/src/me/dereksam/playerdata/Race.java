@@ -32,6 +32,34 @@ public class Race {
 			break;
 		}
 	}
+	
+	public static void setupRace(int raceID) {
+		switch (raceID) {
+		case 1:
+			Race.setupRace(RaceTypes.GOBLIN);
+			break;
+		case 2:
+			Race.setupRace(RaceTypes.ELF);
+			break;
+		case 3:
+			Race.setupRace(RaceTypes.DWARF);
+			break;
+		case 4:
+			Race.setupRace(RaceTypes.HUMAN);
+			break;
+		case 5:
+			Race.setupRace(RaceTypes.GNOME);
+			break;
+		case 6:
+			Race.setupRace(RaceTypes.ORC);
+			break;
+		case 7:
+			Race.setupRace(RaceTypes.TROLL);
+			break;
+		default:
+			break;
+		}
+	}
 		
 	private static void setRace(String race) {
 		raceName = race;
