@@ -1,4 +1,4 @@
-package me.dereksam.races;
+package me.dereksam.playerdata;
 
 public class Race {
 

@@ -3,7 +3,7 @@ Elf		Archers
 Dwarf		Thieves
 Goblin		Warriors
 Troll		Battle Mages
-Orc		Priests
+Orc		
 Human
 Gnome
 
