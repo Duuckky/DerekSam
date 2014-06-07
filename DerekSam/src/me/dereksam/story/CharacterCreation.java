@@ -1,12 +1,12 @@
-package me.dereksam.API;
+package me.dereksam.story;
 
 import java.util.Scanner;
 
-import me.dereksam.items.ItemWoodenSword;
+import me.dereksam.API.API;
 import me.dereksam.playerdata.Race;
 import me.dereksam.playerdata.Role;
 
-public class CharacterCreationAPI {
+public class CharacterCreation {
 	
 	public static int raceID;
 	public static int roleID;
@@ -22,7 +22,6 @@ public class CharacterCreationAPI {
 		while (inCharacterSelection) {
 			API.sendMessage("Please enter you race: ");
 			API.listRaces();
-			InventoryAPI.addItem(ItemWoodenSword.woodenSword);
 			raceID = scan.nextInt();
 			Race.setupRace(raceID);
 			API.sendMessage("Please enter your role");
@@ -35,6 +34,7 @@ public class CharacterCreationAPI {
 			API.sendMessage("1. Yes");
 			API.sendMessage("2. No");
 			answerKey = scan.nextInt();
+			
 			if(answerKey == 1) {
 				inCharacterSelection = false;
 			}

@@ -19,7 +19,15 @@ public class API {
 			API.sendMessage(i + 1 + ". " + Main.roleList[i]);
 		}
 	}
+
 	
+	public static void delay(long millis) {
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 	
 	public final static void clearConsole() {
 		System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n\n");
