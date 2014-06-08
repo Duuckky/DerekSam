@@ -25,7 +25,7 @@ public class ChapterOne {
 
 		while(!selectionValid) {
 			API.sendMessage(" 'Oh... " + player.getName() + ", why are you here?' ");
-			API.sendMessage(" -------------------------");
+			API.sendMessage("--------------------------");
 			API.sendMessage("1. Army recruit on patrol");
 			API.sendMessage("2. Going to see a friend");
 			API.sendMessage("3. Gathering supplies from a neighboring village");
@@ -76,19 +76,22 @@ public class ChapterOne {
 	public static void Help() {
 		selectionValid = false;
 		while(!selectionValid) {
-			API.sendMessage("'If you need any help come to my village.'");
-			API.sendMessage(" -------------------------");
+			API.sendMessage("'Would you like some help?'");
+			API.sendMessage("--------------------------");
 			API.sendMessage("1. Sure");
 			API.sendMessage("2. No thanks");
 			API.sendMessage("Please select one");
 			selection = scan.nextLine();
 			if(selection.equalsIgnoreCase("1") || selection.equalsIgnoreCase("sure") || selection.equalsIgnoreCase("yes")) {
-				API.sendMessage("'Okay, follow me.'");
+				API.sendMessage("'Okay, I'll take you to see my dad.'");
 				API.delay(5000);
 				API.sendMessage("The boy points towards the village and says");
 				API.delay(5000);
 				API.sendMessage("'The village is that way.'");
 				API.delay(6000);
+				API.sendMessage("You follow the boy to his village");
+				API.delay(10000);
+				inVillage();
 				selectionValid = true;
 			} else if(selection == "2" || selection.equalsIgnoreCase("no") || selection.equalsIgnoreCase("no thanks")){
 				API.sendMessage("'Okay, well if you ever need anything my village is west of here.'");
@@ -97,5 +100,14 @@ public class ChapterOne {
 				API.sendMessage("Invalid option try again");
 			}
 		}
+	}
+	
+	public static void inVillage() {
+		API.sendMessage("As you approach the village and sees that zombies");
+		API.sendMessage(" are burning down the village. The kid starts to cry.");
+		API.sendMessage("You quickly grab him and try to run, but you trip on a rock.");
+		API.sendMessage("You have to fight, what weapon will you choose?");
+		API.sendMessage("--------------------------");
+		
 	}
 }

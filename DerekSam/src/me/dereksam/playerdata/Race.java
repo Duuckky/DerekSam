@@ -4,59 +4,34 @@ public class Race {
 
 	private static String raceName;
 	
-	public static void setupRace(RaceTypes race) {
-		switch (race) {
-		case ELF:
-			setRace("elf");
+	public static void setupRace(int raceID) {
+		
+		Player player = new Player();
+		
+		switch (raceID) {
+		case 1:
+			player.setRace(RaceTypes.GOBLIN);
 			break;
-		case HUMAN:
-			setRace("human");
+		case 2:
+			player.setRace(RaceTypes.ELF);
 			break;
-		case GOBLIN:
-			setRace("goblin");
+		case 3:
+			player.setRace(RaceTypes.DWARF);
 			break;
-		case ORC:
-			setRace("orc");
+		case 4:
+			player.setRace(RaceTypes.HUMAN);
 			break;
-		case TROLL:
-			setRace("troll");
+		case 5:
+			player.setRace(RaceTypes.GNOME);
 			break;
-		case GNOME:
-			setRace("gnome");
+		case 6:
+			player.setRace(RaceTypes.ORC);
 			break;
-		case DWARF:
-			setRace("dwarf");
+		case 7:
+			player.setRace(RaceTypes.TROLL);
 			break;
 		default:
 			setRace(null);
-			break;
-		}
-	}
-	
-	public static void setupRace(int raceID) {
-		switch (raceID) {
-		case 1:
-			Race.setupRace(RaceTypes.GOBLIN);
-			break;
-		case 2:
-			Race.setupRace(RaceTypes.ELF);
-			break;
-		case 3:
-			Race.setupRace(RaceTypes.DWARF);
-			break;
-		case 4:
-			Race.setupRace(RaceTypes.HUMAN);
-			break;
-		case 5:
-			Race.setupRace(RaceTypes.GNOME);
-			break;
-		case 6:
-			Race.setupRace(RaceTypes.ORC);
-			break;
-		case 7:
-			Race.setupRace(RaceTypes.TROLL);
-			break;
-		default:
 			break;
 		}
 	}

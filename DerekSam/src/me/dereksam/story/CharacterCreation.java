@@ -3,6 +3,7 @@ package me.dereksam.story;
 import java.util.Scanner;
 
 import me.dereksam.API.API;
+import me.dereksam.playerdata.Player;
 import me.dereksam.playerdata.Race;
 import me.dereksam.playerdata.Role;
 
@@ -16,6 +17,7 @@ public class CharacterCreation {
 	public static void characterCreation() {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
+		Player player = new Player();
 
 		inCharacterSelection = true;
 		
@@ -28,7 +30,7 @@ public class CharacterCreation {
 			API.listRoles();
 			roleID = scan.nextInt();
 			Role.setupRole(roleID);
-			API.sendMessage("Race: " + Race.getRace());
+			API.sendMessage("Race: " + player.getRace());
 			API.sendMessage("Role: " + Role.getRole());
 			API.sendMessage("Is this correct?");
 			API.sendMessage("1. Yes");
